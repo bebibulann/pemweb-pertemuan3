@@ -1,0 +1,80 @@
+<!-- Shortcut pake tanda seru "!"-->
+
+<!DOCTYPE html>         <!-- mendefinisikan jenis dokumennya (HTML)-->
+<html lang="en">        <!--Isi dari HTML-->
+<head>                  <!--Bagian paling atas yg mengatur setting tak terlihat-->
+    <meta charset="UTF-8">         <!-- Character Set (jenis huruf yg dipakai)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- Viewport: halaman web bisa dibesar kecilin -->
+    <title>Example Semantic Web</title>         <!--Hal yg akan disearching/scanning oleh robot-->
+</head>
+<body>
+    <header>
+        <img src="logo.avif" alt="logo dummy" width="150" height="150"> 
+        <h1>Example Semantic Web with HTML5</h1>
+    </header>
+    <nav>
+        <a href="hal1.html">Link1</a>
+        <a href="hal2.html">Link2</a>
+        <a href="hal3.html">Link3</a>
+        <a href="hal4.html">Link4</a>
+    </nav>
+    <article>
+        <h2>Welcome to my web</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus incidunt eaque nisi nihil veritatis, molestiae minus, ab reprehenderit natus eligendi voluptatibus quas quae itaque? Fugiat ut omnis doloremque voluptatibus hic.</p>
+        <br/>
+        <h2>Form Pemesanan Kendaraan</h2>
+        <form action="/submit" method="post"> 
+            <fieldset> 
+                <legend>Formulir Pemesanan Kendaraan</legend> 
+        
+                <label for="nama">Nama Pemesan:</label> 
+                <input type="text" id="nama" name="nama" required> 
+                <br/><br/>
+
+                <label for="alamat">Alamat Pengiriman:</label>
+                <input type="text" id="alamat" name="alamat" required>
+                <br/><br/>
+
+                <label for="telp">Nomor Telepon:</label>
+                <input type="tel" id="telp" name="telp" pattern="[0-9]{10-13}" required>
+                <br/><br/>
+
+                <label for="tanggal">Tanggal Sewa:</label> 
+                <input type="date" id="tanggal" name="tanggal" 
+                required> 
+
+                <label for="tanggal">Tanggal Pengembalian:</label> 
+                <input type="date" id="tanggal" name="tanggal" 
+                required> 
+                <br/><br/>
+
+                <label for="jenis_kendaraan">Jenis Kendaraan:</label> 
+                <select id="jenis_kendaraan" name="jenis_kendaraan" required> 
+                    <option value="mobil">Mobil</option> 
+                    <option value="motor">Motor</option> 
+                </select> 
+
+                <label for="model_kendaraan">Model Kendaraan:</label>
+                <input type="text" id="model_kendaraan" name="model_kendaraan" required>
+
+                <label for="no_plat">Nomor Plat Kendaraan:</label>
+                <input type="text" id="no_plat" name="no_plat" required>
+                <br/><br/>
+
+                <label for="asuransi">Asuransi Tambahan:</label> 
+                <input type="checkbox" id="asuransi" name="asuransi"> 
+                <br/><br/>
+
+                <label for="catatan">Catatan Khusus:</label>
+                <input type="text" id="no_plat" name="no_plat">
+                <br/><br/>
+                
+                <button type="submit">Kirim</button> 
+            </fieldset> 
+        </form>
+    </article>
+    <footer>
+        Created by Bebi &copy; 2026
+    </footer>
+</body>
+</html>
